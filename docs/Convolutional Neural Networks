@@ -1,0 +1,45 @@
+# Deep Learning Exercises [DL E]
+
+## Exercise 2: Convolutional Neural Networks
+
+### Introduction
+This exercise is designed to extend your framework to include the building blocks for modern Convolutional Neural Networks (CNNs). You will implement initialization schemes, advanced optimizers, convolutional layers, max-pooling layers, and a flatten layer.
+
+### What I Learned
+
+1. **Initializers**:
+    - Implementing various initialization schemes: Constant, UniformRandom, Xavier, and He.
+    - Understanding the importance of initialization in non-convex optimization problems.
+    - Refactoring layers to use custom initializers for weights and biases.
+
+2. **Advanced Optimizers**:
+    - Implementing advanced optimization schemes: SgdWithMomentum and Adam.
+    - Understanding the benefits of momentum and adaptive learning rates in optimization.
+
+3. **Flatten Layer**:
+    - Implementing a flatten layer to reshape multi-dimensional input into a one-dimensional feature vector.
+    - Connecting convolutional or pooling layers with fully connected layers.
+
+4. **Convolutional Layer**:
+    - Implementing a convolutional layer with trainable parameters.
+    - Handling different stride shapes and convolution shapes (1D and 2D).
+    - Using zero-padding for convolutions to maintain input and output spatial shapes.
+
+5. **Pooling Layer**:
+    - Implementing a max-pooling layer to reduce dimensionality and memory consumption.
+    - Using valid-padding for pooling layers to discard border elements.
+
+### Files Implemented
+
+- `Initializers.py`: Contains the classes `Constant`, `UniformRandom`, `Xavier`, and `He` for different initialization schemes.
+- `Optimizers.py`: Contains the classes `SgdWithMomentum` and `Adam` for advanced optimization schemes.
+- `Flatten.py`: Contains the `Flatten` class for reshaping input tensors.
+- `Conv.py`: Contains the `Conv` class for convolutional layers.
+- `Pooling.py`: Contains the `Pooling` class for max-pooling layers.
+- `NeuralNetworkTests.py`: Unit tests to verify the correctness of the implementations.
+
+### Running the Code
+
+To run the unit tests for each component:
+```sh
+python NeuralNetworkTests.py <TestName>

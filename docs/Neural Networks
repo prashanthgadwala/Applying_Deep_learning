@@ -1,0 +1,54 @@
+# Deep Learning Exercises [DL E]
+
+## Exercise 1: Neural Networks
+
+### Introduction
+This exercise is designed to introduce you to the basics of neural networks and their implementation. You will implement various components of a neural network, including layers, activation functions, loss functions, and an optimizer.
+
+### What I Learned
+
+1. **Basic Optimizer (SGD)**:
+    - Implementing the Stochastic Gradient Descent (SGD) optimizer.
+    - Understanding the gradient descent update scheme.
+
+2. **Base Layer**:
+    - Creating a base layer class to be inherited by other layers.
+    - Differentiating between trainable and non-trainable layers.
+
+3. **Fully Connected Layer**:
+    - Implementing a fully connected (dense) layer.
+    - Performing forward and backward passes.
+    - Managing trainable parameters and using an optimizer to update weights.
+
+4. **Rectified Linear Unit (ReLU)**:
+    - Implementing the ReLU activation function.
+    - Understanding its role in mitigating the vanishing gradient problem.
+
+5. **SoftMax Layer**:
+    - Implementing the SoftMax activation function for classification tasks.
+    - Converting logits to probability distributions.
+
+6. **Cross Entropy Loss**:
+    - Implementing the cross-entropy loss function.
+    - Calculating loss and performing backpropagation.
+
+7. **Neural Network Skeleton**:
+    - Building a neural network class to manage layers, forward and backward passes, and training.
+    - Implementing methods to append layers, train the network, and test the network.
+
+### Files Implemented
+
+- `Optimizers.py`: Contains the `Sgd` class for the SGD optimizer.
+- `Base.py`: Contains the `BaseLayer` class.
+- `FullyConnected.py`: Contains the `FullyConnected` class.
+- `ReLU.py`: Contains the `ReLU` class.
+- `SoftMax.py`: Contains the `SoftMax` class.
+- `Loss.py`: Contains the `CrossEntropyLoss` class.
+- `NeuralNetwork.py`: Contains the `NeuralNetwork` class.
+- `NeuralNetworkTests.py`: Unit tests to verify the correctness of the implementations.
+
+### Running the Code
+
+To run the unit tests for each component:
+```sh
+python NeuralNetworkTests.py <TestName>
