@@ -2,6 +2,11 @@ import unittest
 import numpy as np
 import tabulate
 import argparse
+import sys
+import os
+
+srcpath = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '../src/Numpy Tutorial'))
+sys.path.append(srcpath)
 
 ID = 0  # identifier for dispatcher
 

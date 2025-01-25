@@ -1,4 +1,12 @@
 import unittest
+import os
+import sys
+
+currentdir = os.path.dirname(os.path.abspath(__file__))
+srcdir = os.path.abspath(os.path.join(currentdir, '../src/Convolutional Neural Networks'))
+sys.path.append(srcdir)
+
+
 from Layers import *
 from Optimization import *
 import numpy as np
