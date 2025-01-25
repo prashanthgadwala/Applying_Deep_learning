@@ -1,4 +1,4 @@
-import os.path
+import os
 import json
 import numpy as np
 import matplotlib.pyplot as plt
@@ -80,8 +80,8 @@ class ImageGenerator:
             plt.imshow(img)
         plt.show()
 
-file_path = "/Users/prashanthgadwala/Documents/Study material/Semester2/Deep learning/Exercise/exercise0_material/src_to_implement/exercise_data/"
-label_path = "/Users/prashanthgadwala/Documents/Study material/Semester2/Deep learning/Exercise/exercise0_material/src_to_implement/Labels.json"
+file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'data/exercise_data/')
+label_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'data/Labels.json' )
 batch_size = 6
 image_size = (36, 36)  # Specify the desired image size
 generator = ImageGenerator(file_path, label_path, batch_size, image_size, rotation=True, mirroring=True)
