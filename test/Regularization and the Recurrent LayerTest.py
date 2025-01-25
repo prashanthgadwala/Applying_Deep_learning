@@ -1,4 +1,12 @@
 import unittest
+import os
+import sys
+
+currentdir = os.path.dirname(os.path.abspath(__file__))
+srcdir = os.path.abspath(os.path.join(currentdir, '../src/Regularization and the Recurrent Layer'))
+sys.path.append(srcdir)
+
+
 try:
     LSTM_TEST = True
     from Layers import *
